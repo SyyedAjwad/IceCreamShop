@@ -1,0 +1,49 @@
+<div class="order-det">
+    <div class="container">
+        <div class="heading">
+
+            <h3>
+                Order Details
+            </h3>
+            <span>Thank you ....</span>
+        </div>
+        <br>
+        <div class="table-wrapper">
+	
+            <div class="table-row table-header">
+                <div class="col-wrapper order-date-number-po">
+                    <div class="table-col order-date">Date</div>
+                 
+                </div>
+                
+                <div class="col-wrapper order-year-model-customer">
+                    <div class="col-wrapper order-year-model">
+                  
+                        <div class="table-col order-model">Ice Cream</div>
+                    </div>
+                    <div class="table-col order-customer">Quantity</div>
+                </div>
+                
+            </div>
+            
+            <div class="table-row" *ngFor="let item of ordersData; let i=index">
+                <div class="col-wrapper order-date-number-po">
+                    <div class="table-col order-date">{{item.orderDate | date : 'short'}}</div>
+            
+                </div>
+                
+                <div class="col-wrapper order-year-model-customer">
+                    <div class="col-wrapper order-year-model">
+                     
+                        <div class="table-col order-model">{{item.cone}} {{item.flavour}}</div>
+                    </div>
+                    <div class="table-col order-customer">{{item.quantity}}</div>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</div>

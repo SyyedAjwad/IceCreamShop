@@ -1,0 +1,180 @@
+.ice-landing{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../../assets/bg-1.jpg);
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    padding: 78px 0px 1px 0px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+}
+.ice-landing h1{
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 20px;
+
+}
+.ice-landing p{
+    width: 50%;
+    font-size: 17px;
+}
+
+.panels_container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.left_panel, .right_panel {
+	margin: 20px;
+}
+
+.left_panel {
+	-webkit-box-flex: 300px;
+	    -ms-flex: 300px 0 0.5;
+	        flex: 300px 0 0.5;
+	text-align: center;
+}
+
+.left_panel svg {
+	width: 100%;
+	min-width: 100px;
+}
+
+.right_panel {
+	background: #FBFBFD;
+	-webkit-box-flex: 500px;
+	    -ms-flex: 500px 1 1;
+	        flex: 500px 1 1;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+section.ice-cream-custom {
+    padding-top: 60px;
+}
+
+
+
+/* 
+	Ice Cream Styles 
+*/
+
+/* cone */
+.cone.plain{
+    fill:white;
+}
+.cone.chocolate{
+   fill: #6b2c13 !important;
+   stroke: rgb(81, 22, 34);
+}
+.cone.waffle{
+    fill: #f9fcab;
+ }
+
+/* Scoops */
+.scoop, .bottom {
+	display: inline-block;
+}
+
+.scoop.vanilla {
+	fill: #f7f5dc ;
+}
+.scoop.vanilla + .bottom {
+	fill: #f4f0b2;
+}
+
+.scoop.mango {
+	fill: #F2BB2B;
+}
+.scoop.mango + .bottom {
+	fill: #F2BB2B;
+}
+
+.scoop.chocolate {
+	fill: #6b2c13;
+}
+.scoop.chocolate + .bottom {
+	fill: #592410;
+}
+
+.scoop.coconut {
+	fill: #71d0ed;
+}
+.scoop.coconut + .bottom {
+	fill: #68bed8;
+}
+
+.scoop.strawberry {
+	fill: #f7a7a5;
+}
+.scoop.strawberry + .bottom {
+	fill: #e29998;
+}
+
+
+/* Sauce */
+.sauce {
+	opacity: 0.7;
+	stroke-width: 1.2px;
+	display: inline-block;
+}
+
+.sauce.chocolate {
+	stroke: #4c0303;
+}
+
+.sauce.strawberry {
+	stroke: #fc0202;
+}
+
+.sauce.raspberry {
+	stroke: #fc027f;
+}
+
+.sauce.fudge {
+	stroke: #fc7f02;
+}
+
+/* Sprinkles */
+.sprinkles {
+	display: inline-block;
+}
+
+/* option */
+.first-option {
+    background: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+.first-option-btn {
+    margin-top: 30px;
+    margin-left: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.first-option-btn p{
+    margin-left: 10px;
+}
+
+
+.first-option h6{
+    padding: 10px;
+    background: #ededed;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+.btn-add-cart{
+    background: #ddd;
+    color: #000;
+    font-size: 15px;
+}

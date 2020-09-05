@@ -1,0 +1,46 @@
+<div class="carts-landing">
+
+    <div class="container">
+        <h1>Shopping Cart</h1>
+    
+    <div class="shopping-cart">
+    
+      <div class="column-labels">
+        <label class="product-image">Image</label>
+        <label class="product-details">Product</label>
+        <label class="product-quantity">Quantity</label>
+        <label class="product-removal">Remove</label>
+      </div>
+    
+      <div class="product" *ngFor="let item of cartData; let index = index">
+        <div class="product-image">
+          <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
+        </div>
+        <div class="product-details">
+          <div class="product-title">{{item.cone}}&nbsp;{{item.flavour}}</div>
+          <p class="product-description">Toppings : <span *ngFor="let topping of item.toppings; let index = index">{{topping}} <span *ngIf="index != item.toppings.length - 1">,</span></span></p>
+        </div>
+
+        <div class="product-quantity">
+          <input type="number" [value]="item.quantity ? item.quantity : 1 " min="1" (input)="changeQuantity(item, index, $event)">
+        </div>
+        <div class="product-removal">
+          <button class="remove-product" (click)="removeCart(index)">
+            Remove
+          </button>
+        </div>
+      </div>
+    
+  
+          
+    
+    </div>
+    
+    <div class="btn-check">
+        <div class=" btn btn-cart" (click)="checkout()">
+            Checkout
+        </div>
+    </div>
+    
+    </div>
+</div>
